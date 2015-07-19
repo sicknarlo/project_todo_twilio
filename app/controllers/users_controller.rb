@@ -41,7 +41,7 @@ class UsersController < ApplicationController
 
   def destroy
     @user = User.find(params[:id])
-    if @user.update(white_list_user_params)
+    if @user.destroy
       flash[:notice] = "Deletion successful!"
       redirect_to users_path
     else

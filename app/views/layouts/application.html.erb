@@ -38,7 +38,9 @@
   </head>
 <%= render "layouts/header" %>
 <body class="container">
-<%= flash[:notice] %>
+<div class="text-center">
+    <%= flash[:notice] %>
+</div>
 <%= yield %>
 
 </body>
